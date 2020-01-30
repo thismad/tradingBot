@@ -1,0 +1,34 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+#Axes != Axis, Axes is the group and can contain multiple Axis,
+data limits can be controlled with :
+setx_lim()
+sety_lim()
+
+#Artist Objects are everything we see on the figure, most Artists are tied to and Axes
+
+#All ploting functions are expecting a np.array
+Example :
+x = np.linspace(0, 2, 100)
+
+plt.plot(x, x, label='linear')
+plt.plot(x, x**2, label='quadratic')
+plt.plot(x, x**3, label='cubic')
+
+plt.xlabel('x label')
+plt.ylabel('y label')
+
+plt.title("Simple Plot")
+
+plt.legend()
+
+plt.show()
+
+#if you have a np.array :
+plt.plot("xlabel", "ylabel", data = np.array)
+
+##### BACKEND : if to use matplotlib with interacive backend in GUI APP, gotta change backend to  qt5Agg
+
+#use interactive when want to refresh the plot often, just call draw()
+#use non interactive when want to generate one or more figures and display them before ending or gen a new set of figs

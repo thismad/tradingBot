@@ -1,0 +1,24 @@
+PythonSyntaxeTests
+
+#methode invoquée avt chaque methode de test (permet de stocker des attriuts communs
+# aux texts)
+def setUp(self):
+    #attributs
+
+self.assertRaises(<ERROR_NAME>) #to be put in a context manager with with
+# -> if self.assertRaises throw error then test working otherwise not
+
+self.assertIn(elt, list) # if the elt in list then assertion is true
+
+self. assertEqual(a, b)
+      assertNotEqual(a, b)
+      assertTrue(x)
+      assertFalse(x)
+      assertIs(a, b)
+      assertIsNone(x)
+      assertIn(a, b)
+
+
+# execute test in a folder (will search for it automatically)
+cd folder
+-m unittest
